@@ -48,9 +48,7 @@ do_word_search=True
 primary_list = ["covid19", "covid 19", "covid-19", "coronavirus"]
 
 # and one of these. Words in this list are allowed to be missing the spaces or have words or other stuff replacing or alongside the spaces
-secondary_list = ["patent", "innovat", "invent", "therapeutic", "trial", "vaccine candidate", "orphan drug",
-                  "food and drug administration approval", "fda emergency approval", "novel therapies",
-                  "vaccine", "treatment*", "drug", "antiviral"]
+secondary_list = ["patent", "innovat", "invent", "therapeutic", "trial", "vaccine candidate", "orphan drug", "food and drug administration approval", "fda emergency approval", "novel therapies", "vaccine", "treatment*", "drug", "antiviral"]
 
 
 #duplicate removal Variables:
@@ -70,8 +68,7 @@ sentence_len_threshold=5
 sentence_count_threshold=5
 
 #This is a list of scentences that shouldn't be considered duplicate senteces if they appear in multiple articles (also last var you need to set)
-#If you don't want to use it then set it to empty like so:
-#exclude_sentences = []
+#If you don't want to use it then go to the bottom of the list and see instructions there:
 exclude_sentences = [
         "Today Headlines The most important news stories of the day curated by Post editors and delivered every morning",
         "Get all the stories you needtoknow from the most powerful name in news delivered first thing every morning to your inbox",
@@ -167,7 +164,11 @@ exclude_sentences = [
         "He was most recently reporter at The Lowell Sun",
         "Rick is Massachusetts native and graduated from Boston University",
         "While not reporting he enjoys longdistance running"]
+        
+#If you want to not use the exclude_sentences variable above the uncomment out the line below. Make sure to re-comment it if you want to go back to using the exclude sentence array!
+#exclude_sentences = []
 
+#You should't need to change any of this
 if __name__ == "__main__":
 
     if do_filtering:
