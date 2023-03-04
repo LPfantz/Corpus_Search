@@ -36,6 +36,7 @@ date_range_end = "21-1-1"
 
 # Set this variable to True if you want to use preexisting sources file, and False if You don't.
 # If it's set to false it will create a file you can use next time (if you are using the same filtering parameters for both runs)
+# If you're not sure what this should be, then it should be False
 use_existing_sources_file = False
 sources_filtered_file = "now-sources-2020-filtered-any-source.txt"
 
